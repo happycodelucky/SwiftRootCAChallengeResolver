@@ -1,6 +1,6 @@
 # RootCAChallengeResolver
 
-A package to support use of [URLSession](https://developer.apple.com/documentation/foundation/urlsession) to make SSL request where the service utilizes a self-signed certificate. Using RootCAChallengeResolver encourages not pervasive disabling [ATS](https://developer.apple.com/documentation/security/preventing_insecure_network_connections).
+A package to support use of [URLSession](https://developer.apple.com/documentation/foundation/urlsession) to make SSL request where the service utilizes a self-signed certificate. Using RootCAChallengeResolver encourages less pervasive disabling of [ATS](https://developer.apple.com/documentation/security/preventing_insecure_network_connections).
 
 As always, be careful of the endpoints you trust. They should ideally be endpoints your organization hosts.
 
