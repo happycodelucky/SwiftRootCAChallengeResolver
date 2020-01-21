@@ -43,7 +43,9 @@ public class RootCAChallengeResolver: NSObject, URLSessionDelegate {
 
     // MARK: URLSessionDelegate
 
-    public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+    public func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge,
+                           completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void)
+    {
         let protectionSpace = challenge.protectionSpace
         if // Only support trust challenges
             protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust,
