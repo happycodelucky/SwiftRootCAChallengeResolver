@@ -29,7 +29,7 @@ To use RootCAChallengeResolver within your project see how to reference package 
 
 # Usage
 
-The intent is for [`RootCAChallengeResolver`](./Source/RootCAChallengeResolver.swift) to be used as a [URLSession](https://developer.apple.com/documentation/foundation/urlsession)'s delegate for the specific host your application has implicit trust in. 
+The intent is for [`RootCAChallengeResolver`](./Sources/RootCAChallengeResolver.swift) to be used as a [URLSession](https://developer.apple.com/documentation/foundation/urlsession)'s delegate for the specific host your application has implicit trust in. 
 
 First create a new requests (details here are for show only)
 
@@ -89,6 +89,6 @@ let session = URLSession(configuration: .default, host: host)
 
 # Unit Testing
 
-Testing has not yet been implemented. 
+Testing has not yet been implemented.
 
 This package was extracted from another project and is yet to be fully self-serving.
