@@ -38,7 +38,7 @@ extension URLSession {
     ///     - host: Host to trust
     ///     - cert: Limit to certificate to trust
     public convenience init?(configuration: URLSessionConfiguration, host: String, cert: Data?) {
-        guard let resolver = RootCAChallengeResolver(host: host, cert: trustCert) else {
+        guard let resolver = RootCAChallengeResolver(host: host, cert: cert) else {
             return nil
         }
 
